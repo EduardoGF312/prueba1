@@ -46,6 +46,13 @@ export default function App() {
   );
 }
 
+Mapa.navigationOptions = {
+  drawerLabel: 'Mapa',
+  drawerIcon: () => (
+    <FontAwesome name='map' size={30} color="red"/> 
+  ),
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
