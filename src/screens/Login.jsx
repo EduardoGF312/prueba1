@@ -25,15 +25,16 @@ const Login = ({ onLogin }) => {
     if (ruta === "" || pass === "") {
       alert("Por favor, completa todos los campos");
     } else {
-      axios
-        .post("http://localhost:5000/userLogin", { ruta, pass })
-        .then((response) => {
-          alert(response.data);
-          onLogin();
-        })
-        .catch((error) => {
-          alert(error.response.data);
-        });
+      // axios
+      //   .post("http://localhost:5000/userLogin", { ruta, pass })
+      //   .then((response) => {
+      //     alert(response.data);
+      //     onLogin();
+      //   })
+      //   .catch((error) => {
+      //     alert(error.response.data);
+      //   });
+      onLogin();
     }
   };
 
